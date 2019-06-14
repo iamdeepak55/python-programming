@@ -1,0 +1,15 @@
+set1={'mango',24,'banana','bat','crickrt',789,'football',999,'india'}
+x={} # it is always a dictionary not a set.
+print(type(x)) # type function print the type of x i.e 'dict'
+set2=set()  # this is the way to define a empty set.
+set3={'apple','grapes','mango','guava','banana'}
+set4= set1 & set3 #used to find intersection
+set5= set1 | set3  #used to find union
+set6=set1-set3     # used to find only set1 elements which is not present in set3
+set7=set3-set1    # used to find only set3 elements which is not present in set1
+set8=set3 ^ set1  #used to find symmetric difference(i.e union - intersection)
+print(set4)
+print(set5)
+print(set6)
+print(set7)
+print(set8)
