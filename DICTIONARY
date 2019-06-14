@@ -1,0 +1,37 @@
+dict1={ 'a':'abc','b':'f','chet':'himanshu  ','bagdadi':'ISI','pranshu':'Baniya',111:'Cetpa  '}
+dict1[89]='xyz'
+
+
+
+print(dict1)
+print(dict1['chet'])
+print(dict1['pranshu'])
+print(dict1['bagdadi'])
+
+
+# used to read key
+for e in dict1:
+  print(e)
+for  e in dict1.keys():
+    print(e)
+
+
+# used to read values
+for e in dict1.values():
+    print(e)
+
+
+# used to read keys and values at the same time (datatype is tuple)
+for e in dict1.items():
+    print(e)
+    print(e[1],":",e[0])
+print(dict1.get(111))
+
+
+# functions used in dictionary
+dict1.pop('a')
+dict2=dict1.copy()
+print(dict2)
+dict2={'b':'a11','22':'a22'}
+dict1.update(dict2)
+print(dict1)
