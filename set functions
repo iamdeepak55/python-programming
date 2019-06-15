@@ -1,0 +1,42 @@
+a={1,3,4,5,5,6,7,8}  # set is mutable
+
+l=[1,3,4,556,5545] # list is mutable
+
+# list conversion into frozenset
+fset1=frozenset(l) # immutable
+
+c=a.union(l)  # a | l
+
+d=a.intersection(l) # a & l
+
+e=a.difference(l) #a-l
+
+f=a.symmetric_difference(l) # a^l
+
+# list conversion into set
+
+set=set(l)
+
+print(fset1)
+
+print(set)
+
+print(c)
+
+print(d)
+
+print(e)
+
+print(f)
+
+a.add('hi') # add new elements
+
+print(a)
+
+a.update(l) # add new set
+
+print(a)
+
+a.clear()
+
+print(type(a)) # type function to check what is the type of a  
