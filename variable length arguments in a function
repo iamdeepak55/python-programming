@@ -1,0 +1,7 @@
+# how to take variable length arguments .
+def custumer(name,**info): # use ** to take key as well as values
+    print(name)
+    for i,j in info.items(): # print key and values both
+       print(i,j)
+
+custumer('Deepak Sharma', age=18, address='Aligarh',mob=9876543210)       
