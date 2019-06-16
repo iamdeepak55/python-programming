@@ -1,0 +1,43 @@
+import sys
+#-----------------------------BUSINESS LOGIC LAYER---------------------------------#
+class Calculator:
+    def __init__(self):
+        self.no1=0
+        self.no2=0
+        self.res=0
+    def sum(self):
+        self.res=self.no1+self.no2
+    def substraction(self):
+        self.res=self.no1-self.no2
+    def multiply(self):
+        self.res=self.no1 * self.no2
+    def division(self):
+        self.res=(self.no1/self.no2)
+    def power(self):
+        self.res=self.no1 ** self.no2
+#--------------------------------Presentation Layer--------------------------#
+obj=Calculator()
+while(True):
+ n=int(input("enter your choice 1.Sum \n 2.Substraction \n 3.Multiply \n 4.Division \n 5.Power \n 6.Exit"))
+ if(n!=6):
+     obj.no1=int(input("Enter no.1"))
+     obj.no2=int(input("Enter no.2"))
+
+ if n==1:
+  obj.sum()
+  print("Result =",obj.res)
+ elif n==2:
+    obj.substraction()
+    print("Result =",obj.res)
+ elif n==3:
+    obj.multiply()
+    print("Result =",obj.res)
+ elif n==4:
+    obj.division()
+    print("Result =",obj.res)
+ elif n==5:
+    obj.power()
+    print("Result =",obj.res)
+ else:
+    print("exit successfully")
+    sys.exit()
